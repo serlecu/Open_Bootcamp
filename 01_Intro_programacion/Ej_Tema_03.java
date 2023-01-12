@@ -10,25 +10,26 @@ Segunda parte:
 - Crear un objeto miCoche en el main y añadirle una puerta.
 - Mostrar el número de puertas que tiene el objeto.
 */
+public class Main{
+    public static void main(string[] args){
+        sumatriple(1,2,3);
 
-public static void main(string[] args){
-    sumatriple(1,2,3);
+        var miCoche = new Coche;
+        miCoche.anadirPuerta(1);
 
-    var miCoche = new Coche;
-    miCoche.anadirPuerta(1);
-
-    System.out.print(miCoche.numPuertas);
-}
-
-public static int sumatriple(int a,int b, int c){
-    return a + b + c;
-}
-
-class Coche{
-    var numPuertas int;
-
-    public void anadirPuerta(int n){
-        numPuertas += n;
+        System.out.println(miCoche.numPuertas);
     }
+
+    public static int sumatriple(int a,int b, int c){
+        return a + b + c;
+    }
+    
 }
 
+public class Coche{
+        var numPuertas int;
+
+        public void anadirPuerta(int n){
+            numPuertas += n;
+        }
+    }
